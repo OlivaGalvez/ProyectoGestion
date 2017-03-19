@@ -28,31 +28,34 @@ Partial Class InsertarVehiculo
         Me.lblMatricula = New System.Windows.Forms.Label()
         Me.lblColor = New System.Windows.Forms.Label()
         Me.lblModelo = New System.Windows.Forms.Label()
+        Me.txtMatricula = New System.Windows.Forms.TextBox()
+        Me.txtColor = New System.Windows.Forms.TextBox()
+        Me.txtModelo = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'btnInsertar
         '
-        Me.btnInsertar.Location = New System.Drawing.Point(335, 45)
+        Me.btnInsertar.Location = New System.Drawing.Point(293, 47)
         Me.btnInsertar.Name = "btnInsertar"
-        Me.btnInsertar.Size = New System.Drawing.Size(75, 23)
+        Me.btnInsertar.Size = New System.Drawing.Size(101, 23)
         Me.btnInsertar.TabIndex = 0
         Me.btnInsertar.Text = "INSERTAR"
         Me.btnInsertar.UseVisualStyleBackColor = True
         '
         'btnLimpiar
         '
-        Me.btnLimpiar.Location = New System.Drawing.Point(335, 101)
+        Me.btnLimpiar.Location = New System.Drawing.Point(293, 102)
         Me.btnLimpiar.Name = "btnLimpiar"
-        Me.btnLimpiar.Size = New System.Drawing.Size(75, 23)
+        Me.btnLimpiar.Size = New System.Drawing.Size(101, 23)
         Me.btnLimpiar.TabIndex = 1
         Me.btnLimpiar.Text = "LIMPIAR"
         Me.btnLimpiar.UseVisualStyleBackColor = True
         '
         'btnVolver
         '
-        Me.btnVolver.Location = New System.Drawing.Point(335, 169)
+        Me.btnVolver.Location = New System.Drawing.Point(293, 169)
         Me.btnVolver.Name = "btnVolver"
-        Me.btnVolver.Size = New System.Drawing.Size(75, 23)
+        Me.btnVolver.Size = New System.Drawing.Size(101, 23)
         Me.btnVolver.TabIndex = 2
         Me.btnVolver.Text = "VOLVER"
         Me.btnVolver.UseVisualStyleBackColor = True
@@ -84,12 +87,36 @@ Partial Class InsertarVehiculo
         Me.lblModelo.TabIndex = 5
         Me.lblModelo.Text = "Modelo"
         '
+        'txtMatricula
+        '
+        Me.txtMatricula.Location = New System.Drawing.Point(124, 47)
+        Me.txtMatricula.Name = "txtMatricula"
+        Me.txtMatricula.Size = New System.Drawing.Size(111, 20)
+        Me.txtMatricula.TabIndex = 6
+        '
+        'txtColor
+        '
+        Me.txtColor.Location = New System.Drawing.Point(124, 104)
+        Me.txtColor.Name = "txtColor"
+        Me.txtColor.Size = New System.Drawing.Size(111, 20)
+        Me.txtColor.TabIndex = 7
+        '
+        'txtModelo
+        '
+        Me.txtModelo.Location = New System.Drawing.Point(124, 169)
+        Me.txtModelo.Name = "txtModelo"
+        Me.txtModelo.Size = New System.Drawing.Size(111, 20)
+        Me.txtModelo.TabIndex = 8
+        '
         'InsertarVehiculo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(467, 261)
+        Me.ClientSize = New System.Drawing.Size(446, 214)
         Me.ControlBox = False
+        Me.Controls.Add(Me.txtModelo)
+        Me.Controls.Add(Me.txtColor)
+        Me.Controls.Add(Me.txtMatricula)
         Me.Controls.Add(Me.lblModelo)
         Me.Controls.Add(Me.lblColor)
         Me.Controls.Add(Me.lblMatricula)
@@ -109,4 +136,7 @@ Partial Class InsertarVehiculo
     Friend WithEvents lblMatricula As Label
     Friend WithEvents lblColor As Label
     Friend WithEvents lblModelo As Label
+    Friend WithEvents txtMatricula As TextBox
+    Friend WithEvents txtColor As TextBox
+    Friend WithEvents txtModelo As TextBox
 End Class
