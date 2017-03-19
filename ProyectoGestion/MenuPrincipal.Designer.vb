@@ -22,45 +22,45 @@ Partial Class MenuPrincipal
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.btnInsertarDatos = New System.Windows.Forms.Button()
+        Me.btnBorrarDatos = New System.Windows.Forms.Button()
+        Me.btnConsultas = New System.Windows.Forms.Button()
         Me.btnSalir = New System.Windows.Forms.Button()
         Me.lblInicio = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
-        'Button1
+        'btnInsertarDatos
         '
-        Me.Button1.Location = New System.Drawing.Point(61, 100)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnInsertarDatos.Location = New System.Drawing.Point(61, 84)
+        Me.btnInsertarDatos.Name = "btnInsertarDatos"
+        Me.btnInsertarDatos.Size = New System.Drawing.Size(113, 23)
+        Me.btnInsertarDatos.TabIndex = 0
+        Me.btnInsertarDatos.Text = "Insertar Datos"
+        Me.btnInsertarDatos.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btnBorrarDatos
         '
-        Me.Button2.Location = New System.Drawing.Point(61, 148)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "Button2"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnBorrarDatos.Location = New System.Drawing.Point(61, 126)
+        Me.btnBorrarDatos.Name = "btnBorrarDatos"
+        Me.btnBorrarDatos.Size = New System.Drawing.Size(113, 23)
+        Me.btnBorrarDatos.TabIndex = 1
+        Me.btnBorrarDatos.Text = "BorrarDatos"
+        Me.btnBorrarDatos.UseVisualStyleBackColor = True
         '
-        'Button3
+        'btnConsultas
         '
-        Me.Button3.Location = New System.Drawing.Point(61, 195)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 23)
-        Me.Button3.TabIndex = 2
-        Me.Button3.Text = "Button3"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btnConsultas.Location = New System.Drawing.Point(61, 169)
+        Me.btnConsultas.Name = "btnConsultas"
+        Me.btnConsultas.Size = New System.Drawing.Size(113, 23)
+        Me.btnConsultas.TabIndex = 2
+        Me.btnConsultas.Text = "Consultas"
+        Me.btnConsultas.UseVisualStyleBackColor = True
         '
         'btnSalir
         '
-        Me.btnSalir.Location = New System.Drawing.Point(282, 148)
+        Me.btnSalir.Location = New System.Drawing.Point(264, 126)
         Me.btnSalir.Name = "btnSalir"
-        Me.btnSalir.Size = New System.Drawing.Size(75, 23)
+        Me.btnSalir.Size = New System.Drawing.Size(113, 23)
         Me.btnSalir.TabIndex = 3
         Me.btnSalir.Text = "Salir"
         Me.btnSalir.UseVisualStyleBackColor = True
@@ -79,12 +79,13 @@ Partial Class MenuPrincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(427, 261)
+        Me.ClientSize = New System.Drawing.Size(427, 219)
+        Me.ControlBox = False
         Me.Controls.Add(Me.lblInicio)
         Me.Controls.Add(Me.btnSalir)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnConsultas)
+        Me.Controls.Add(Me.btnBorrarDatos)
+        Me.Controls.Add(Me.btnInsertarDatos)
         Me.Name = "MenuPrincipal"
         Me.Text = "Menu Principal"
         Me.ResumeLayout(False)
@@ -92,9 +93,9 @@ Partial Class MenuPrincipal
 
     End Sub
 
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
+    Friend WithEvents btnInsertarDatos As Button
+    Friend WithEvents btnBorrarDatos As Button
+    Friend WithEvents btnConsultas As Button
     Friend WithEvents btnSalir As Button
     Friend WithEvents lblInicio As Label
 End Class

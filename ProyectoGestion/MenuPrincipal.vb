@@ -8,4 +8,11 @@
             Exit Sub
         End If
     End Sub
+
+    Private Sub btnInsertarDatos_Click(sender As Object, e As EventArgs) Handles btnInsertarDatos.Click
+        'Boton usado para llamar al formulario InsertarRegistro'
+        Dim insertarRegistro As New InsertarRegistro
+        insertarRegistro.Show()
+        Me.Hide()
+    End Sub
 End Class
