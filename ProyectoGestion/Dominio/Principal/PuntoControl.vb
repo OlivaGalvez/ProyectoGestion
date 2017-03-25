@@ -1,48 +1,41 @@
-﻿Public Class Vehiculo
-    Dim _matricula As String
-    Dim _color As String
-    Dim _modelo As String
-    Dim gestor As GestorVehiculo
+﻿Public Class PuntoControl
+    Dim _IDPunto As Integer
+    Dim _IDTramo As Integer
+    Dim gestor As GestorPuntoControl
 
-    Public Sub New(matricula As String, color As String, modelo As String)
-        Me._matricula = matricula
-        Me._color = color
-        Me._modelo = modelo
-        Me.gestor = New GestorVehiculo
+    Public Sub New(IDPunto As Integer, IDTramo As Integer)
+        Me._IDPunto = IDPunto
+        Me._IDTramo = IDTramo
+        Me.gestor = New GestorPuntoControl
+    End Sub
+
+    Public Sub New(IDPunto As Integer)
+        Me._IDPunto = IDPunto
     End Sub
 
     Public Sub New()
-        gestor = New GestorVehiculo
+        gestor = New GestorPuntoControl
     End Sub
 
-    Public Property matricula
+    Public Property IDPunto
         Get
-            Return _matricula
+            Return _IDPunto
         End Get
         Set(value)
-            Me._matricula = value
+            Me._IDPunto = value
         End Set
     End Property
 
-    Public Property color
+    Public Property IDTramo
 
         Get
-            Return _color
+            Return _IDTramo
         End Get
         Set(value)
-            Me._color = value
+            Me._IDTramo = value
         End Set
     End Property
 
-    Public Property modelo
-
-        Get
-            Return _modelo
-        End Get
-        Set(value)
-            Me._modelo = value
-        End Set
-    End Property
 
     'Método eliminar los elementos de la tabla utilizando la clase gestorVehiculo'
     Public Sub eliminar()
@@ -55,7 +48,7 @@
     End Sub
 
     'Método  leer un elemento de la tabla utilizando la clase gestorVehiculo'
-    Public Sub leerVehiculo()
+    Public Sub leerPuntoControl()
         gestor.read(Me)
     End Sub
 
@@ -69,12 +62,11 @@
         gestor.update(Me)
     End Sub
 
-    Public Property getGestor As GestorVehiculo
+    Public Property getGestor As GestorPuntoControl
         Get
             Return gestor
         End Get
-        Set(value As GestorVehiculo)
+        Set(value As GestorPuntoControl)
         End Set
     End Property
-
 End Class

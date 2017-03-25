@@ -72,31 +72,40 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AgenteBD.vb" />
-    <Compile Include="Aplicación.vb">
+    <Compile Include="Dominio\Gestor\GestorPasa.vb" />
+    <Compile Include="Dominio\Gestor\GestorPuntoControl.vb" />
+    <Compile Include="Dominio\Principal\Pasa.vb" />
+    <Compile Include="Persistencia\AgenteBD.vb" />
+    <Compile Include="Presentación\Aplicación.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Aplicación.Designer.vb">
+    <Compile Include="Presentación\Aplicación.Designer.vb">
       <DependentUpon>Aplicación.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GestorVehiculo.vb" />
-    <Compile Include="InsertarRegistro.Designer.vb">
+    <Compile Include="Dominio\Gestor\GestorVehiculo.vb" />
+    <Compile Include="Presentación\InsertarPuntoControl.Designer.vb">
+      <DependentUpon>InsertarPuntoControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentación\InsertarPuntoControl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentación\InsertarRegistro.Designer.vb">
       <DependentUpon>InsertarRegistro.vb</DependentUpon>
     </Compile>
-    <Compile Include="InsertarRegistro.vb">
+    <Compile Include="Presentación\InsertarRegistro.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="InsertarVehiculo.Designer.vb">
+    <Compile Include="Presentación\InsertarVehiculo.Designer.vb">
       <DependentUpon>InsertarVehiculo.vb</DependentUpon>
     </Compile>
-    <Compile Include="InsertarVehiculo.vb">
+    <Compile Include="Presentación\InsertarVehiculo.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuPrincipal.Designer.vb">
+    <Compile Include="Presentación\MenuPrincipal.Designer.vb">
       <DependentUpon>MenuPrincipal.vb</DependentUpon>
     </Compile>
-    <Compile Include="MenuPrincipal.vb">
+    <Compile Include="Presentación\MenuPrincipal.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -114,19 +123,23 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Vehiculo.vb" />
+    <Compile Include="Dominio\Principal\PuntoControl.vb" />
+    <Compile Include="Dominio\Principal\Vehiculo.vb" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Aplicación.resx">
+    <EmbeddedResource Include="Presentación\Aplicación.resx">
       <DependentUpon>Aplicación.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="InsertarRegistro.resx">
+    <EmbeddedResource Include="Presentación\InsertarPuntoControl.resx">
+      <DependentUpon>InsertarPuntoControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentación\InsertarRegistro.resx">
       <DependentUpon>InsertarRegistro.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="InsertarVehiculo.resx">
+    <EmbeddedResource Include="Presentación\InsertarVehiculo.resx">
       <DependentUpon>InsertarVehiculo.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuPrincipal.resx">
+    <EmbeddedResource Include="Presentación\MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">

@@ -11,6 +11,10 @@
             Dim insertarVehiculo As New InsertarVehiculo
             insertarVehiculo.Show()
             Me.Hide()
+        ElseIf cbTabla.Text = "PUNTO_CONTROL" Then
+            Dim insertarPuntoControl As New InsertarPuntoControl
+            insertarPuntoControl.Show()
+            Me.Hide()
         End If
     End Sub
 
