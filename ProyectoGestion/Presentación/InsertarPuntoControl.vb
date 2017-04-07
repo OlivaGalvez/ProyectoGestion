@@ -31,6 +31,8 @@ Public Class InsertarPuntoControl
 
                 If IsNumeric(idPunto) = False Or IsNumeric(idTramo) = False Then
                     MsgBox("Algún campos se ha introducido de manera incorrecta")
+                ElseIf guardarElemento.Items.Contains(idPunto.ToString) Then
+                    MsgBox("El punto de control ya existe.Por favor, inserte otro punto")
                 Else
 
                     Dim ptControl As PuntoControl = New PuntoControl(idPunto, idTramo)
@@ -50,5 +52,14 @@ Public Class InsertarPuntoControl
 
     End Sub
 
+    Private Sub limpiar()
+        txtIDPunto.Text = " "
+        txtTramo.Text = " "
 
+    End Sub
+
+    Private Sub btnLimpiar_Click(sender As Object, e As EventArgs) Handles btnLimpiar.Click
+        limpiar()
+
+    End Sub
 End Class
