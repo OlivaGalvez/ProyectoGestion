@@ -75,6 +75,24 @@
     <Compile Include="Dominio\Gestor\GestorPasa.vb" />
     <Compile Include="Dominio\Gestor\GestorPuntoControl.vb" />
     <Compile Include="Dominio\Principal\Pasa.vb" />
+    <Compile Include="Presentación\InsertarPasa.Designer.vb">
+      <DependentUpon>InsertarPasa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentación\InsertarPasa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentación\InsertarPertenece.Designer.vb">
+      <DependentUpon>InsertarPertenece.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentación\InsertarPertenece.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentación\InsertarRealiza.Designer.vb">
+      <DependentUpon>InsertarRealiza.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentación\InsertarRealiza.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Presentación\InsertarRecorrido.Designer.vb">
       <DependentUpon>InsertarRecorrido.vb</DependentUpon>
     </Compile>
@@ -142,8 +160,17 @@
     <EmbeddedResource Include="Presentación\Aplicación.resx">
       <DependentUpon>Aplicación.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentación\InsertarPasa.resx">
+      <DependentUpon>InsertarPasa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentación\InsertarPertenece.resx">
+      <DependentUpon>InsertarPertenece.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentación\InsertarPuntoControl.resx">
       <DependentUpon>InsertarPuntoControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentación\InsertarRealiza.resx">
+      <DependentUpon>InsertarRealiza.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentación\InsertarRecorrido.resx">
       <DependentUpon>InsertarRecorrido.vb</DependentUpon>

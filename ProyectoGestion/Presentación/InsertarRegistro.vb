@@ -23,6 +23,18 @@
             Dim insertarRecorrido As New InsertarRecorrido
             insertarRecorrido.Show()
             Me.Hide()
+        ElseIf cbTabla.Text = "PASA" Then
+            Dim insertarPasa As New InsertarPasa
+            insertarPasa.Show()
+            Me.Hide()
+        ElseIf cbTabla.Text = "PERTENECE" Then
+            Dim insertarPertenece As New InsertarPertenece
+            insertarPertenece.Show()
+            Me.Hide()
+        ElseIf cbTabla.Text = "REALIZA" Then
+            Dim insertarRealiza As New InsertarRealiza
+            insertarRealiza.Show()
+            Me.Hide()
         End If
     End Sub
 
