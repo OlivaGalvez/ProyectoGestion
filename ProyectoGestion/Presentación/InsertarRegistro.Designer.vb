@@ -40,7 +40,7 @@ Partial Class InsertarRegistro
         'cbTabla
         '
         Me.cbTabla.FormattingEnabled = True
-        Me.cbTabla.Items.AddRange(New Object() {"VEHICULOS", "PUNTO_CONTROL"})
+        Me.cbTabla.Items.AddRange(New Object() {"VEHICULOS", "PUNTO_CONTROL", "TRAMO", "RECORRIDO", "PASA", "PERTENECE", "REALIZA"})
         Me.cbTabla.Location = New System.Drawing.Point(209, 36)
         Me.cbTabla.Name = "cbTabla"
         Me.cbTabla.Size = New System.Drawing.Size(189, 21)

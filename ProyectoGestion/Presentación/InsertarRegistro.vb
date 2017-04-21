@@ -15,6 +15,14 @@
             Dim insertarPuntoControl As New InsertarPuntoControl
             insertarPuntoControl.Show()
             Me.Hide()
+        ElseIf cbTabla.Text = "TRAMO" Then
+            Dim insertarTramo As New InsertarTramo
+            insertarTramo.Show()
+            Me.Hide()
+        ElseIf cbTabla.Text = "RECORRIDO" Then
+            Dim insertarRecorrido As New InsertarRecorrido
+            insertarRecorrido.Show()
+            Me.Hide()
         End If
     End Sub
 

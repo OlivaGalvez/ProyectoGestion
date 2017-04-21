@@ -75,6 +75,18 @@
     <Compile Include="Dominio\Gestor\GestorPasa.vb" />
     <Compile Include="Dominio\Gestor\GestorPuntoControl.vb" />
     <Compile Include="Dominio\Principal\Pasa.vb" />
+    <Compile Include="Presentación\InsertarRecorrido.Designer.vb">
+      <DependentUpon>InsertarRecorrido.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentación\InsertarRecorrido.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentación\InsertarTramo.Designer.vb">
+      <DependentUpon>InsertarTramo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentación\InsertarTramo.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Persistencia\AgenteBD.vb" />
     <Compile Include="Presentación\Aplicación.vb">
       <SubType>Form</SubType>
@@ -133,8 +145,14 @@
     <EmbeddedResource Include="Presentación\InsertarPuntoControl.resx">
       <DependentUpon>InsertarPuntoControl.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentación\InsertarRecorrido.resx">
+      <DependentUpon>InsertarRecorrido.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentación\InsertarRegistro.resx">
       <DependentUpon>InsertarRegistro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentación\InsertarTramo.resx">
+      <DependentUpon>InsertarTramo.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentación\InsertarVehiculo.resx">
       <DependentUpon>InsertarVehiculo.vb</DependentUpon>
