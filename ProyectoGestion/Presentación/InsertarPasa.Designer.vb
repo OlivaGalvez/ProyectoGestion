@@ -41,6 +41,7 @@ Partial Class InsertarPasa
         Me.btnLimpiar = New System.Windows.Forms.Button()
         Me.btnVolver = New System.Windows.Forms.Button()
         Me.txtMomento = New System.Windows.Forms.TextBox()
+        Me.btnHabilitar = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btn1
@@ -208,11 +209,22 @@ Partial Class InsertarPasa
         Me.txtMomento.Size = New System.Drawing.Size(100, 20)
         Me.txtMomento.TabIndex = 19
         '
+        'btnHabilitar
+        '
+        Me.btnHabilitar.Location = New System.Drawing.Point(12, 247)
+        Me.btnHabilitar.Name = "btnHabilitar"
+        Me.btnHabilitar.Size = New System.Drawing.Size(75, 76)
+        Me.btnHabilitar.TabIndex = 20
+        Me.btnHabilitar.Text = "Habilitar"
+        Me.btnHabilitar.UseVisualStyleBackColor = True
+        '
         'InsertarPasa
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(612, 335)
+        Me.ControlBox = False
+        Me.Controls.Add(Me.btnHabilitar)
         Me.Controls.Add(Me.txtMomento)
         Me.Controls.Add(Me.btnVolver)
         Me.Controls.Add(Me.btnLimpiar)
@@ -258,4 +270,5 @@ Partial Class InsertarPasa
     Friend WithEvents btnLimpiar As Button
     Friend WithEvents btnVolver As Button
     Friend WithEvents txtMomento As TextBox
+    Friend WithEvents btnHabilitar As Button
 End Class

@@ -11,10 +11,14 @@
         Me.gestor = New GestorVehiculo
     End Sub
 
-    Public Sub New(matricula As String)
-        Me._matricula = matricula
-    End Sub
+    ' Public Sub New(matricula As String)
+    'Me._matricula = matricula
+    'End Sub
 
+    Sub New(ByVal a As String)
+        _matricula = a
+        gestor = New GestorVehiculo
+    End Sub
     Public Sub New()
         gestor = New GestorVehiculo
     End Sub
