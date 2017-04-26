@@ -74,7 +74,11 @@
   <ItemGroup>
     <Compile Include="Dominio\Gestor\GestorPasa.vb" />
     <Compile Include="Dominio\Gestor\GestorPuntoControl.vb" />
+    <Compile Include="Dominio\Gestor\GestorRecorrido.vb" />
+    <Compile Include="Dominio\Gestor\GestorTramo.vb" />
     <Compile Include="Dominio\Principal\Pasa.vb" />
+    <Compile Include="Dominio\Principal\Recorrido.vb" />
+    <Compile Include="Dominio\Principal\Tramo.vb" />
     <Compile Include="Presentación\InsertarPasa.Designer.vb">
       <DependentUpon>InsertarPasa.vb</DependentUpon>
     </Compile>
