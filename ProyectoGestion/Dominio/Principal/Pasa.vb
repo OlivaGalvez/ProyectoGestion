@@ -1,9 +1,45 @@
 ﻿Public Class Pasa
     Dim _Matricula As Vehiculo
     Dim _IDPunto As PuntoControl
+    Dim _tiempo As Date
+    Dim _velocidad As Integer
     Dim _gestor As GestorPasa
 
-    Public Property Vehiculo As Vehiculo
+    Public Sub New(ByVal a As Vehiculo, ByVal b As PuntoControl, ByVal c As Date, ByVal d As Integer)
+        _Matricula = a
+        _IDPunto = b
+        _tiempo = c
+        _velocidad = d
+        _gestor = New GestorPasa
+    End Sub
+
+    Sub New(ByVal a As Vehiculo, ByVal b As PuntoControl, ByVal c As Date)
+        _Matricula = a
+        _IDPunto = b
+        _tiempo = c
+        _gestor = New GestorPasa
+    End Sub
+
+    Sub New()
+        _gestor = New GestorPasa
+    End Sub
+
+    Sub New(ByVal a As Vehiculo)
+        _Matricula = a
+        _gestor = New GestorPasa
+    End Sub
+
+    Sub New(ByVal a As PuntoControl)
+        _IDPunto = a
+        _gestor = New GestorPasa
+    End Sub
+
+    Sub New(ByVal a As Date)
+        _tiempo = a
+        _gestor = New GestorPasa
+    End Sub
+
+    Public Property Matricula As Vehiculo
         Get
             Return _Matricula
         End Get
@@ -21,60 +57,21 @@
         End Set
     End Property
 
-    Public Property getGestor As GestorPasa
+    Public Property Tiempo As Date
         Get
-            Return _gestor
+            Return _tiempo
         End Get
-        Set(value As GestorPasa)
+        Set(value As Date)
+            _tiempo = value
         End Set
     End Property
 
-    Sub New(ByVal a As Vehiculo)
-        _Matricula = a
-        _gestor = New GestorPasa
-    End Sub
-
-    Sub New(ByVal a As PuntoControl)
-        _IDPunto = a
-        _gestor = New GestorPasa
-    End Sub
-
-    Sub New(ByVal a As Vehiculo, ByVal b As PuntoControl)
-        _Matricula = a
-        _IDPunto = b
-        _gestor = New GestorPasa
-    End Sub
-
-    Sub New()
-        _gestor = New GestorPasa
-    End Sub
-
-
-    Public Sub eliminar()
-        _gestor.delete(Me)
-    End Sub
-
-
-    Public Sub insertar()
-        _gestor.insert(Me)
-    End Sub
-
-
-    Public Sub leerPasa()
-        _gestor.read(Me)
-    End Sub
-
-    Public Sub leerPasa2()
-        _gestor.read2(Me)
-    End Sub
-
-
-    Public Sub leerTodos()
-        _gestor.readAll()
-    End Sub
-
-
-    Public Sub modificar()
-        _gestor.update(Me)
-    End Sub
+    Public Property Velocidad As Integer
+        Get
+            Return _velocidad
+        End Get
+        Set(value As Integer)
+            _velocidad = value
+        End Set
+    End Property
 End Class
