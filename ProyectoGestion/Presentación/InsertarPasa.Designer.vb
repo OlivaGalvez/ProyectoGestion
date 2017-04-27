@@ -22,6 +22,8 @@ Partial Class InsertarPasa
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(InsertarPasa))
         Me.btn1 = New System.Windows.Forms.Button()
         Me.btn3 = New System.Windows.Forms.Button()
         Me.btn2 = New System.Windows.Forms.Button()
@@ -42,10 +44,13 @@ Partial Class InsertarPasa
         Me.btnVolver = New System.Windows.Forms.Button()
         Me.txtMomento = New System.Windows.Forms.TextBox()
         Me.btnHabilitar = New System.Windows.Forms.Button()
+        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.btnAyuda = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btn1
         '
+        Me.btn1.Enabled = False
         Me.btn1.Location = New System.Drawing.Point(180, 119)
         Me.btn1.Name = "btn1"
         Me.btn1.Size = New System.Drawing.Size(49, 23)
@@ -65,6 +70,7 @@ Partial Class InsertarPasa
         '
         'btn2
         '
+        Me.btn2.Enabled = False
         Me.btn2.Location = New System.Drawing.Point(382, 119)
         Me.btn2.Name = "btn2"
         Me.btn2.Size = New System.Drawing.Size(49, 23)
@@ -218,12 +224,27 @@ Partial Class InsertarPasa
         Me.btnHabilitar.Text = "Habilitar"
         Me.btnHabilitar.UseVisualStyleBackColor = True
         '
+        'ContextMenuStrip1
+        '
+        Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(61, 4)
+        '
+        'btnAyuda
+        '
+        Me.btnAyuda.Image = CType(resources.GetObject("btnAyuda.Image"), System.Drawing.Image)
+        Me.btnAyuda.Location = New System.Drawing.Point(337, 282)
+        Me.btnAyuda.Name = "btnAyuda"
+        Me.btnAyuda.Size = New System.Drawing.Size(48, 41)
+        Me.btnAyuda.TabIndex = 22
+        Me.btnAyuda.UseVisualStyleBackColor = True
+        '
         'InsertarPasa
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(612, 335)
         Me.ControlBox = False
+        Me.Controls.Add(Me.btnAyuda)
         Me.Controls.Add(Me.btnHabilitar)
         Me.Controls.Add(Me.txtMomento)
         Me.Controls.Add(Me.btnVolver)
@@ -271,4 +292,6 @@ Partial Class InsertarPasa
     Friend WithEvents btnVolver As Button
     Friend WithEvents txtMomento As TextBox
     Friend WithEvents btnHabilitar As Button
+    Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
+    Friend WithEvents btnAyuda As Button
 End Class

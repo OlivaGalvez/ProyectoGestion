@@ -19,6 +19,7 @@
         _matricula = a
         gestor = New GestorVehiculo
     End Sub
+
     Public Sub New()
         gestor = New GestorVehiculo
     End Sub

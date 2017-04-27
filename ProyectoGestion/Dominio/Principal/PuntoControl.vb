@@ -9,8 +9,9 @@
         Me.gestor = New GestorPuntoControl
     End Sub
 
-    Public Sub New(IDPunto As Integer)
-        Me._IDPunto = IDPunto
+    Sub New(ByVal b As Integer)
+        _IDPunto = b
+        gestor = New GestorPuntoControl
     End Sub
 
     Public Sub New()
