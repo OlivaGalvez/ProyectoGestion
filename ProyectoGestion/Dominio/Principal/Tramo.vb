@@ -1,5 +1,5 @@
 ﻿Public Class Tramo
-    Dim _IdTramo As String
+    Dim _IdTramo As Integer
     Dim _tipoTramo As String
     Dim _longitud As Integer
     Dim _velocidadMax As Integer
@@ -8,7 +8,7 @@
 
     Dim _gestor As GestorTramo
 
-    Public Sub New(idTramo As String, tipoTramo As String, longitud As Integer,
+    Public Sub New(idTramo As Integer, tipoTramo As String, longitud As Integer,
                    velocidadMax As Integer, velocidadMin As Integer, velocidadAprox As Integer)
         Me._IdTramo = idTramo
         Me._tipoTramo = tipoTramo
@@ -17,6 +17,11 @@
         Me._velocidadMin = velocidadMin
         Me._velocidadAprox = _velocidadAprox
         Me._gestor = New GestorTramo
+    End Sub
+
+    Sub New(ByVal a As Integer)
+        _IdTramo = a
+        _gestor = New GestorTramo
     End Sub
 
     Public Sub New()

@@ -29,7 +29,7 @@
     End Sub
 
 
-    Public Sub leerVehiculo()
+    Public Sub leerRecorrido()
         gestor.read(Me)
     End Sub
 

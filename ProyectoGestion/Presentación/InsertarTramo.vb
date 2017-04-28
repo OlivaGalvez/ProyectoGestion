@@ -10,7 +10,7 @@ Public Class InsertarTramo
     Private Sub btnInsertar_Click(sender As Object, e As EventArgs) Handles btnInsertar.Click
         Try
 
-            Dim _IdTramo As String
+            Dim _IdTramo As Integer
             Dim _tipoTramo As String
             Dim _longitud As Integer
             Dim _velocidadMax As Integer

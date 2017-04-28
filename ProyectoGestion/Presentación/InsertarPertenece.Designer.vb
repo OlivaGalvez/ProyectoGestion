@@ -36,6 +36,7 @@ Partial Class InsertarPertenece
         Me.btn2 = New System.Windows.Forms.Button()
         Me.btn3 = New System.Windows.Forms.Button()
         Me.btn1 = New System.Windows.Forms.Button()
+        Me.btnHabilitar = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnVolver
@@ -136,6 +137,7 @@ Partial Class InsertarPertenece
         '
         'btn2
         '
+        Me.btn2.Enabled = False
         Me.btn2.Location = New System.Drawing.Point(348, 111)
         Me.btn2.Name = "btn2"
         Me.btn2.Size = New System.Drawing.Size(49, 23)
@@ -155,6 +157,7 @@ Partial Class InsertarPertenece
         '
         'btn1
         '
+        Me.btn1.Enabled = False
         Me.btn1.Location = New System.Drawing.Point(146, 111)
         Me.btn1.Name = "btn1"
         Me.btn1.Size = New System.Drawing.Size(49, 23)
@@ -162,12 +165,22 @@ Partial Class InsertarPertenece
         Me.btn1.Text = "> >"
         Me.btn1.UseVisualStyleBackColor = True
         '
+        'btnHabilitar
+        '
+        Me.btnHabilitar.Location = New System.Drawing.Point(16, 218)
+        Me.btnHabilitar.Name = "btnHabilitar"
+        Me.btnHabilitar.Size = New System.Drawing.Size(75, 76)
+        Me.btnHabilitar.TabIndex = 38
+        Me.btnHabilitar.Text = "Habilitar"
+        Me.btnHabilitar.UseVisualStyleBackColor = True
+        '
         'InsertarPertenece
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(580, 301)
         Me.ControlBox = False
+        Me.Controls.Add(Me.btnHabilitar)
         Me.Controls.Add(Me.btnVolver)
         Me.Controls.Add(Me.btnLimpiar)
         Me.Controls.Add(Me.btnInsertar)
@@ -203,4 +216,5 @@ Partial Class InsertarPertenece
     Friend WithEvents btn2 As Button
     Friend WithEvents btn3 As Button
     Friend WithEvents btn1 As Button
+    Friend WithEvents btnHabilitar As Button
 End Class

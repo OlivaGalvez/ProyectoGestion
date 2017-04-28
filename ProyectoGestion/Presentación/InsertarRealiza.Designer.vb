@@ -40,11 +40,12 @@ Partial Class InsertarRealiza
         Me.btn2 = New System.Windows.Forms.Button()
         Me.btn3 = New System.Windows.Forms.Button()
         Me.btn1 = New System.Windows.Forms.Button()
+        Me.btnHabilitar = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'txtHoraLlegada
         '
-        Me.txtHoraLlegada.Location = New System.Drawing.Point(181, 269)
+        Me.txtHoraLlegada.Location = New System.Drawing.Point(228, 269)
         Me.txtHoraLlegada.Name = "txtHoraLlegada"
         Me.txtHoraLlegada.Size = New System.Drawing.Size(100, 20)
         Me.txtHoraLlegada.TabIndex = 38
@@ -78,7 +79,7 @@ Partial Class InsertarRealiza
         '
         'txtHoraSalida
         '
-        Me.txtHoraSalida.Location = New System.Drawing.Point(181, 228)
+        Me.txtHoraSalida.Location = New System.Drawing.Point(228, 228)
         Me.txtHoraSalida.Name = "txtHoraSalida"
         Me.txtHoraSalida.Size = New System.Drawing.Size(100, 20)
         Me.txtHoraSalida.TabIndex = 33
@@ -86,7 +87,7 @@ Partial Class InsertarRealiza
         'lblHoraLlegada
         '
         Me.lblHoraLlegada.AutoSize = True
-        Me.lblHoraLlegada.Location = New System.Drawing.Point(77, 276)
+        Me.lblHoraLlegada.Location = New System.Drawing.Point(105, 276)
         Me.lblHoraLlegada.Name = "lblHoraLlegada"
         Me.lblHoraLlegada.Size = New System.Drawing.Size(86, 13)
         Me.lblHoraLlegada.TabIndex = 32
@@ -95,7 +96,7 @@ Partial Class InsertarRealiza
         'lblHoraDeSalida
         '
         Me.lblHoraDeSalida.AutoSize = True
-        Me.lblHoraDeSalida.Location = New System.Drawing.Point(86, 231)
+        Me.lblHoraDeSalida.Location = New System.Drawing.Point(114, 231)
         Me.lblHoraDeSalida.Name = "lblHoraDeSalida"
         Me.lblHoraDeSalida.Size = New System.Drawing.Size(77, 13)
         Me.lblHoraDeSalida.TabIndex = 31
@@ -198,12 +199,22 @@ Partial Class InsertarRealiza
         Me.btn1.Text = "> >"
         Me.btn1.UseVisualStyleBackColor = True
         '
+        'btnHabilitar
+        '
+        Me.btnHabilitar.Location = New System.Drawing.Point(12, 228)
+        Me.btnHabilitar.Name = "btnHabilitar"
+        Me.btnHabilitar.Size = New System.Drawing.Size(75, 76)
+        Me.btnHabilitar.TabIndex = 39
+        Me.btnHabilitar.Text = "Habilitar"
+        Me.btnHabilitar.UseVisualStyleBackColor = True
+        '
         'InsertarRealiza
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(586, 327)
         Me.ControlBox = False
+        Me.Controls.Add(Me.btnHabilitar)
         Me.Controls.Add(Me.txtHoraLlegada)
         Me.Controls.Add(Me.btnVolver)
         Me.Controls.Add(Me.btnLimpiar)
@@ -247,4 +258,5 @@ Partial Class InsertarRealiza
     Friend WithEvents btn2 As Button
     Friend WithEvents btn3 As Button
     Friend WithEvents btn1 As Button
+    Friend WithEvents btnHabilitar As Button
 End Class

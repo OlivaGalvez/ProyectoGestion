@@ -33,6 +33,7 @@ Public Class InsertarPasa
 
             btn1.Enabled = True
             btn2.Enabled = True
+            btnHabilitar.Enabled = False
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
@@ -158,5 +159,18 @@ Public Class InsertarPasa
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
+    End Sub
+
+    Private Sub btnLimpiar_Click(sender As Object, e As EventArgs) Handles btnLimpiar.Click
+        txtVelocidad.Text = " "
+        txtMomento.Text = " "
+        ListBox1.Items.Clear()
+        ListBox2.Items.Clear()
+        ListBox3.Items.Clear()
+        btnHabilitar.Enabled = True
+        btn1.Enabled = False
+        btn2.Enabled = False
+        btn3.Enabled = False
+        btn4.Enabled = False
     End Sub
 End Class
